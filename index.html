@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Characters Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <h1>🦸‍♂️ Marvel Characters</h1>
+            <p>Descubra seus heróis favoritos da Marvel</p>
+        </header>
+
+        <section class="search-section">
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="Digite o nome de um personagem (ex: Spider, Iron, Thor...)"
+                    autocomplete="off"
+                >
+                <button id="searchBtn" class="search-btn">Buscar</button>
+            </div>
+        </section>
+
+        <section id="loading" class="loading" style="display: none;" role="status" aria-live="polite">
+            <div class="spinner"></div>
+            <p>Buscando personagens...</p>
+        </section>
+
+        <section id="error" class="error" style="display: none;" role="alert" aria-live="assertive"></section>
+
+        <section id="results" class="results">
+            <div class="no-results">
+                <p>Digite o nome de um personagem para começar a busca!</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
